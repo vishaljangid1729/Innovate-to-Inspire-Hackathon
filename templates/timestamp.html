@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
+      <title>Street Light System</title>
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+<style>
+.carousel .carousel-item {
+width:400px !important;}
+</style>
+    <body bgcolor = turquoise>
+	      
+        <nav>
+      <div class="nav-wrapper white">
+          <a href="#!" class="brand-logo ">&nbsp;&nbsp;<font color = "brown">Street Lighting System</font></a>
+        <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+        <ul class="right hide-on-med-and-down">
+          <li><a href = "{{ url_for('home') }}" class = "btn black waves-effect waves-light">Consumer</a></li>
+          <li><a href = "{{ url_for('login') }}" class = "btn black waves-effect waves-light">Administrator</a></li>
+        </ul>
+        <ul class="side-nav" id="mobile-demo">
+          <li><a href="{{ url_for('home') }}">Consumer</a></li>
+          <li><a href="{{ url_for('login') }}">Administrator</a></li>
+        </ul>
+      </div>
+    </nav>
+
+
+		
+		
+
+  <center>
+  <div class = "">
+  <h3>Timestamp Graph</h3>   
+  
+  <img src="{{ (graph1) }}" alt=""> <br>
+  <img src="{{ (graph2) }}" alt=""> <br>
+  <img src="{{ (graph3) }}" alt="">
+      
+      
+</div>
+    </div>
+  </div>
+</center>
+  <div class="fixed-action-btn" style="bottom:45px;right:24px">
+          <a id="menu" onclick="$('.tap-target').tapTarget('open')" class="waves-effect waves-light btn btn-floating btn-large yellow">
+            <i class="material-icons">add_alert</i>
+          </a>
+        </div>
+        <!-- TAP TARGET CONTENT -->
+        <div class="tap-target orange" data-activates="menu">
+          <div class="tap-target-content white-text">
+            <h5>Info</h5>
+            <p class="white-text">For any queries with the website, contact us at nprosofficial@gmail.com</p>
+          </div>
+        </div>
+
+  
+
+
+
+      <!--JavaScript at end of body for optimized loading-->
+      <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
+      <script>
+        $(document).ready(function(){
+          // Init Carousel
+          $('.carousel').carousel();
+
+          // Init Carousel Slider
+          $('.carousel.carousel-slider').carousel({fullWidth:true});
+
+          // Fire off toast
+          //Materialize.toast('Hello World', 3000);
+
+          // Init Slider
+          $('.slider').slider();
+
+          // Init Modal
+          $('.modal').modal();
+
+          // Init Sidenav
+          $('.button-collapse').sideNav();
+        });
+      </script>
+<script language = "javascript">
+ $(document).ready(function(){
+      $('.parallax').parallax();
+    });
+</script>
+       <script>
+          $(".button-collapse").sideNav();
+       </script>
+
+    </body>
+  </html>
