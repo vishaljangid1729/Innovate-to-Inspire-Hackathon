@@ -1,4 +1,5 @@
-# Smart Meter Data Analysis
+# Centralized Control & Monitoring Systems (CCMS)
+Real-time data being collected through smart LED street lights connected to Centralized Control & Monitoring Systems (CCMS)
 ## Presentation link
 (https://prezi.com/view/ncy1RuI4TpjM7lMsbJhE/)
 
