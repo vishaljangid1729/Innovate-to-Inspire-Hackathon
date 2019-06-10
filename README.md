@@ -1,4 +1,4 @@
-# Innovate-to-Inspire-Hackathon
+# Smart Meter Data Analysis
 ## Presentation link
 (https://prezi.com/view/ncy1RuI4TpjM7lMsbJhE/)
 
